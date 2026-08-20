@@ -19,9 +19,12 @@
 // - Component reusability (used twice in App.jsx!)
 //
 // ============================================================
+
 // STEP 1: Import motion from "framer-motion"
+
 /* --- YOUR IMPORTS GO HERE --- */
 import { motion } from "framer-motion";
+
 // STEP 2: Create and export the RibbonTicker component
 // export default function RibbonTicker() { ... }
 //
@@ -61,6 +64,7 @@ import { motion } from "framer-motion";
 //
 // NOTE: The scrolling animation is handled by CSS in index.css
 // Look for the @keyframes ribbon-scroll rule.
+
 /* --- YOUR COMPONENT CODE GOES HERE --- */
 export default function RibbonTicker() {
     const blends = [
@@ -80,9 +84,12 @@ export default function RibbonTicker() {
         "Arabian Mocha",
         "Red Sulawesi"
     ];
+
     // "..." (spread) copies the array's items, so this listst the blends twice.
     // The CSS scrolls left by exactly half the width and snaps back - with an identical second half, the reset is invisible and the loop looks endlesss
+
     const items = [...blends, ...blends];
+
     return (
         // Outer container - CSS clisp whatever scrolls past the edges
         <div className="ribbon-ticker-container">
@@ -107,4 +114,3 @@ export default function RibbonTicker() {
         </div>
     );
 }
- 
