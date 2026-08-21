@@ -59,6 +59,7 @@ import NavBar from "./components/NavBar";
 import RibbonTicker from "./components/RibbonTicker";
 import FeaturesSection from "./components/FeaturesSection";
 import AboutSection from "./components/AboutSection";
+import CtaSection from "./components/CtaSection";
 
 export default function App() {
     return (
@@ -86,7 +87,9 @@ export default function App() {
             </section>
 
             {/* CTA */}
-            <section className="bg-cta"></section>
+            <section className="bg-cta">
+                <CtaSection />
+            </section>
 
             {/* ABOUT */}
             <section className="bg-cta" id="about">
